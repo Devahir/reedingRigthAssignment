@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/Yellow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FullCookingView">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/finalmeal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/LightYellow"
+                    android:text="Area"
+                    android:textSize="25dp"
+                    android:textColor="@color/RosyBrown"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/area"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Category"
+                    android:background="@color/LightYellow"
+                    android:textSize="25dp"
+                    android:textColor="@color/RosyBrown"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/catagories"
+                    android:textSize="20dp"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textSize="25dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/LightYellow"
+                    android:textColor="@color/RosyBrown"
+                    android:text="Instructions"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/Instructions"
+                    android:layout_width="match_parent"
+                    android:textSize="20dp"
+                    android:background="@color/white"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <ListView
+                android:id="@+id/ingradient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
